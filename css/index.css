@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#tap {
+  width: 1920px;
+}
+#tap .header {
+  display: flex;
+}
+#tap .header .header-right {
+  width: 800px;
+  height: 1060px;
+}
+#tap .header .header-right p {
+  margin: 18px 0 336px  400px ;
+}
+#tap .header .header-right .money {
+  width: 800px;
+  height: 440px;
+}
+#tap .header .header-right .money .left {
+  float: left;
+  width: 300px;
+  margin-top: 100px ;
+}
+#tap .header .header-right .money .top {
+  float: left;
+}
+#tap .header .header-left {
+  flex: 1;
+}
+#tap .header .header-left .nav {
+  float: left;
+  margin-left: 350px;
+  background-color: #18a1e5;
+}
+#tap .header .header-left .nav li {
+  float: left;
+  width: 140px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 16px;
+  color: #fff;
+}
+#tap .header .header-left .nav .buttoms {
+  border-bottom: 4px solid black;
+  border-width: 1px;
+}
+#tap .tex {
+  width: 100%;
+}
+#tap .tex .tex_center {
+  margin-left: 400px ;
+}
+#tap .tex .tex_center p {
+  color: #a8abad;
+}
