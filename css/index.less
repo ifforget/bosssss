@@ -28,24 +28,35 @@
         
         .header-left{
             flex:1;
+            background-image: url(../images/beijing.png);
             .nav{
                 float: left;
-                margin-left:350px; 
-                background-color: #18a1e5;
+                margin-left:380px; 
+                text-align: center;
                 li{
                     float: left;
-                    width: 140px;
+                    width: 130px;
+                    margin-left: 20px;
+                    margin-right: 20px;
                     height: 80px;
                     text-align: center;
                     line-height:80px;
                     font-size: 16px;
                     color:#fff;
-                    
+                    box-sizing:border-box;
+                   
+                   }
+                   .btnn{
+                    ::before{
+                        display: block;
+                        content:"";
+                        width:50px;
+                        margin-left: 40px;
+                        background-color: #fff;
+                        border-bottom: 4px solid #fff;
+                   }
                 }
-                .buttoms{
-                    border-bottom: 4px solid black;
-                    border-width: 1px;
-                }
+               
             }
         }
     }
@@ -59,6 +70,114 @@
             }
         }
     }
+
+    .period{
+        width: 100%;
+        margin-top: 100px;
+        height: 300px;
+        .period_u{
+            margin-left:200px;
+            width: 1200px;
+            li{
+                float: left;
+                width: 300px;
+                height: 300px;
+                text-align: center;
+                box-sizing:border-box;  
+            }
+            .active{
+                border:  4px solid #f7fcfd
+            }
+        }
+    }
+
+    .flow{
+        width: 100%;
+        margin-top: 160px;
+        .flow_top{
+            height: 150px;
+            text-align: center;
+            .lc{
+                width: 580px;
+                height: 50px;
+                margin: 0 auto;
+                margin-top: 20px;
+                line-height: 50px; 
+                display: flex;
+                justify-content: space-between;
+                font-size:16px;
+                div{
+                font-size:16px;
+                color: #4d4d4d;
+             }
+             .acr{
+                border-bottom:2px solid #36a6eb;
+             }
+            }
+        }
+        .flow_bottom{
+             width: 1000px;
+             height: 450px;
+             margin-left:400px;
+            ul{
+                li{
+                    float: left;
+                    width: 250px;
+                    text-align: center;
+                    span{
+                        display: block;
+                        margin-top: 20px;
+                        color: #4e4e4e;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .swiper-container {
+        width: 1920px;
+        .swiper-button-prev,
+        .swiper-button-next {
+            position: absolute;
+            color: #e6e6e6;
+            top: 50%;
+            width: 70px;
+            height: 100px;
+            margin-top: -22px;
+            z-index: 10;
+            cursor: pointer;
+            background-size: 100px 70px;
+            background-position: center;
+            background-repeat: no-repeat;
+            }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+          }
+      }
+
+      .footer{
+          width: 100%;
+          height: 208px;
+          span{
+              float: left;
+          }
+      }
     
 }
 

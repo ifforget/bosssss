@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
 </head>
 <body>
     <div id=tap>
@@ -20,26 +21,107 @@
             </div>
             <div class="header-left">
                 <ul class="nav">
-                    <li class="buttoms">RPODUCT</li>
+                    <li class="btnn">RPODUCT<span></span></li>
                     <li>回款周期<span></span></li>
-                    <li>使用流程</li>
-                    <li>理财产品</li>
+                    <li>使用流程<span></span></li>
+                    <li>理财产品<span></span></li>
                 </ul>
            </div>
         </div>
         <div class="tex">
-            <div class="tex_center"><p>&nbsp;&nbsp;易盈宝是一个新型理财产品，跟多家金融机构合作，资金实力宏厚，能基于大数据进行分析投资的理财产品。
+            <div class="tex_center"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;易盈宝是一个新型理财产品，跟多家金融机构合作，资金实力宏厚，<br>能基于大数据进行分析投资的理财产品。
                     具有低风险、收益周期短、长期收益稳定、收益透明化等特点。<br>
                     
-                    易盈宝作为新型的理财产品，1000元起投，其资金收益周期为每72小时稳定收益1%，每张订单完成周期最长为72小时。</br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 易盈宝作为新型的理财产品，1000元起投，其资金收益周期为每72小时稳定收益1%，每张订单完成周期最长为72小时。</br>
                     
                     易盈宝承诺：现在注册购买成为易盈宝理财用户，投资收益0风险，为您的资金保驾护航，为您打开理财新时代的篇章。</p>
             </div>
-            
         </div>
-        <div class=""></div>
-        <div></div>
-        <div></div>
-    </div>
+        <div class="period">
+            <ul class="period_u">
+                <li class="active"><a href="#"><img src="./images/04.PNG" alt=""></a></li>
+                <li><a href="#"><img src="./images/05.PNG" alt=""></a></li>
+                <li><a href="#"><img src="./images/06.PNG" alt=""></a></li>
+                <li><a href="#"><img src="./images/07PNG.PNG" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="flow">
+                <div class="flow_top">
+                    <p><img src="./images/lc5.PNG" alt=""></p>
+                    <div class="lc">
+                      <div class="acr">注册流程</div>
+                      <div >使用流程</div>
+                    </div>
+                </div>
+                <div class="flow_bottom">
+                    <ul>
+                        <li>
+                                <p><img src="./images/lc1.png" alt=""></p>
+                               <span>用户下载</span>
+                        </li>
+                        <li>
+                                <p><img src="./images/lc2.png" alt=""></p>
+                                <span>注册</span>
+                        </li>
+                        <li>
+                                <p><img src="./images/lc3.png" alt=""></p>
+                                <span>确认订单</span>
+                        </li>
+                        <li>
+                                <p><img src="./images/lc4.png" alt=""></p>
+                                <span>付款</span>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+         <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./images/banner.PNG" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/banner.PNG" alt=""></div>
+                            <div class="swiper-slide"><img src="./images/banner.PNG" alt=""></div>
+                        </div>
+                        <!-- 如果需要分页器 -->
+                        <div class="swiper-pagination"></div>
+                        
+                        <!-- 如果需要导航按钮 -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        
+                        <!-- 如果需要滚动条 -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+        <div class="footer">
+                <span><img src="./images/fppter1.PNG" alt=""></span>
+                <span><img src="./images/footer2.PNG" alt=""></span>
+        </div>
+    </div>     
+    <script src="js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>  
+
+            var mySwiper = new Swiper ('.swiper-container', {
+                direction: 'horizontal', // 垂直切换选项
+                loop: true, // 循环模式选项
+                
+                // 如果需要分页器
+                pagination: {
+                el: '.swiper-pagination',
+                },
+                
+                // 如果需要前进后退按钮
+                navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                },
+                
+                // 如果需要滚动条
+                // scrollbar: {
+                // el: '.swiper-scrollbar',
+                // },
+            })        
+        </script>
 </body>
+
+
 </html>
